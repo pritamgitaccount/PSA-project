@@ -11,7 +11,7 @@ import java.util.Map;
 public class UserService {
 
     // In-memory storage for associating phone numbers with OTPs
-    private Map<String, String> otpStorage = new HashMap<>();
+    private final Map<String, String> otpStorage = new HashMap<>();
 
     /**
      * Stores the provided OTP for the given phone number.
